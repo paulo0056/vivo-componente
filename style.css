@@ -76,7 +76,7 @@
   display: none;
 }
 
-/* responsividade */
+/* responsiveness */
 
 @media (max-width: 600px) {
   .title {
