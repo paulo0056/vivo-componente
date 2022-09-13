@@ -7,12 +7,11 @@
 .description {
   font-size: 1em;
   margin-left: 1.3em;
+  font-weight: 100;
 }
-
 .step-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   height: 100%;
   width: 100%;
 }
@@ -21,10 +20,12 @@
   width: 100%;
 }
 .title {
-  width: 200px;
-  font-size: 25px;
+  width: 230px;
+  font-size: 30px;
+  font-weight: 100;
 }
 .title-step {
+  font-weight: 100;
   font-size: 20px;
   color: black;
   margin-bottom: 5px;
@@ -36,9 +37,7 @@
   min-height: 1em;
   color: gray;
 }
-.step + .step {
-  margin-top: 1.5em;
-}
+
 .step > div:first-child {
   position: static;
   height: 0;
@@ -59,14 +58,13 @@
   text-align: center;
 }
 
-/* Linha Vertical*/
 .circle:after {
   content: " ";
   position: absolute;
   display: block;
   right: 50%;
   bottom: 1px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   left: 50%;
   height: 100%;
   border: rgba(0, 0, 0, 0.25) dashed 1px;
@@ -93,16 +91,16 @@
     padding-bottom: 15px;
     left: 50%;
     height: 100%;
-    width: 1px;
     transform: scale(1, 2);
     transform-origin: 50% -100%;
-    background-color: rgba(0, 0, 0, 0.25);
+    border: rgba(0, 0, 0, 0.25) dashed 1px;
     z-index: -1;
   }
   .step-section {
     display: block;
   }
   .step {
+    margin-top: 1.5em;
     position: relative;
     padding-bottom: 5px;
     min-height: 1em;
@@ -121,16 +119,15 @@
     padding-bottom: 35px;
     left: 50%;
     height: 100%;
-    width: 1px;
     transform: scale(1, 2);
     transform-origin: 50% -100%;
-    background-color: rgba(0, 0, 0, 0.25);
+    border: rgba(0, 0, 0, 0.25) dashed 1px;
     z-index: -1;
   }
 }
 
-/*change content between 601px and 795px*/
-@media screen and (max-width: 795px) and (min-width: 601px) {
+/*change content between 601px and 855px*/
+@media screen and (max-width: 855px) and (min-width: 601px) {
   .circle:after {
     content: " ";
     position: absolute;
@@ -140,14 +137,14 @@
     padding-bottom: 25px;
     left: 50%;
     height: 100%;
-    width: 1px;
     transform: scale(1, 2);
     transform-origin: 50% -100%;
-    background-color: rgba(0, 0, 0, 0.25);
+    border: rgba(0, 0, 0, 0.25) dashed 1px;
     z-index: -1;
   }
 
   .step {
+    margin-top: 1.5em;
     position: relative;
     padding-bottom: 5px;
     min-height: 1em;
