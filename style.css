@@ -78,6 +78,7 @@
 
 /* responsiveness */
 
+/* usual mobile device */
 @media (max-width: 600px) {
   .title {
     margin-bottom: 30px;
@@ -109,7 +110,7 @@
 }
 
 /* galaxy fold or similars*/
-@media (max-width: 280px) {
+@media (max-width: 360px) {
   .circle:after {
     content: " ";
     position: absolute;
